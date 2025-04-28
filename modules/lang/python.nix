@@ -1,4 +1,6 @@
-{
+{ lib, pkgs, ... }:
+let formatter = [ "black" "isort" ];
+in {
   plugins.lsp.servers = {
     ruff.enable = true;
     pyright = {
@@ -7,6 +9,16 @@
         pyright.disableOrganizeImports = true;
         python.analysis.ignore = [ "*" ];
       };
+    };
+  };
+
+  plugins.conform-nvim.settings = {
+    formatters_by_ft = {
+      python = formatter;
+    };
+    formatters = {
+      black = { command = lib.getExe pkgs.black; };
+      isort = { command = lib.getExe pkgs.isort; };
     };
   };
 }
