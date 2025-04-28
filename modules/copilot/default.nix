@@ -1,14 +1,14 @@
 { lib, ... }:
 {
-  plugins.copilot-lua = {
+  plugins.codeium-nvim = {
     enable = true;
-    settings = {
-      filetypes.markdown = true;
-      suggestion = {
-        enabled = true;
-        auto_trigger = true;
-      };
-    };
+    # settings = {
+    #   filetypes.markdown = true;
+    #   suggestion = {
+    #     enabled = true;
+    #     auto_trigger = true;
+    #   };
+    # };
   };
 
   imports = with builtins; with lib;
