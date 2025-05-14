@@ -1,6 +1,6 @@
 { lib, ... }:
 {
-  plugins.codeium-nvim = {
+  plugins.windsurf-nvim = {
     enable = true;
     # settings = {
     #   filetypes.markdown = true;
