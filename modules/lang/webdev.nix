@@ -1,3 +1,4 @@
+{ lib, pkgs, ... }:
 {
   plugins = {
     ts-autotag.enable = true;
@@ -12,6 +13,17 @@
       emmet_ls.enable = true;
       cssls.enable = true;
       biome.enable = true;
+    };
+
+    conform-nvim.settings = {
+      formatters_by_ft = {
+        svelte = [ "prettierd" ];
+      };
+      formatters = {
+        prettierd = {
+          command = lib.getExe pkgs.prettierd;
+        };
+      };
     };
   };
 }
