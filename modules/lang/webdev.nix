@@ -13,11 +13,13 @@
       emmet_ls.enable = true;
       cssls.enable = true;
       biome.enable = true;
+      volar.enable = true;
     };
 
     conform-nvim.settings = {
       formatters_by_ft = {
         svelte = [ "prettierd" ];
+        vue = [ "prettierd" ];
       };
       formatters = {
         prettierd = {
