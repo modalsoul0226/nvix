@@ -20,6 +20,8 @@
       formatters_by_ft = {
         svelte = [ "prettierd" ];
         vue = [ "prettierd" ];
+        typescript = [ "prettierd" ];
+        javascript = [ "prettierd" ];
       };
       formatters = {
         prettierd = {
