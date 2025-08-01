@@ -1,13 +1,23 @@
 { lib, pkgs, ... }:
-let formatter = [ "black" "isort" ];
-in {
+let
+  formatter = [
+    "black"
+    "isort"
+  ];
+in
+{
   plugins.lsp.servers = {
-    ruff.enable = true;
+    # ruff.enable = true;
     pyright = {
       enable = true;
       settings = {
         pyright.disableOrganizeImports = true;
         python.analysis.ignore = [ "*" ];
+      };
+    };
+    pylsp = {
+      settings = {
+        plugins.pylint.enable = true;
       };
     };
   };
@@ -17,8 +27,12 @@ in {
       python = formatter;
     };
     formatters = {
-      black = { command = lib.getExe pkgs.black; };
-      isort = { command = lib.getExe pkgs.isort; };
+      black = {
+        command = lib.getExe pkgs.black;
+      };
+      isort = {
+        command = lib.getExe pkgs.isort;
+      };
     };
   };
 }

@@ -13,7 +13,6 @@
       emmet_ls.enable = true;
       cssls.enable = true;
       biome.enable = true;
-      volar.enable = true;
     };
 
     conform-nvim.settings = {
