@@ -7,7 +7,7 @@ let
 in
 {
   plugins.lsp.servers = {
-    # ruff.enable = true;
+    ruff.enable = true;
     pyright = {
       enable = true;
       settings = {
@@ -15,11 +15,11 @@ in
         python.analysis.ignore = [ "*" ];
       };
     };
-    pylsp = {
-      settings = {
-        plugins.pylint.enable = true;
-      };
-    };
+    # pylsp = {
+    #   settings = {
+    #     plugins.pylint.enable = true;
+    #   };
+    # };
   };
 
   plugins.conform-nvim.settings = {
