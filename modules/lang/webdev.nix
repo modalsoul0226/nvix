@@ -21,6 +21,7 @@
         vue = [ "prettierd" ];
         typescript = [ "prettierd" ];
         javascript = [ "prettierd" ];
+        json = [ "prettierd" ];
       };
       formatters = {
         prettierd = {
