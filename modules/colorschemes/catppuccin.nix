@@ -3,13 +3,14 @@
   colorschemes.catppuccin = {
     enable = true;
     settings = {
-    color_overrides = {
+      color_overrides = {
         mocha = {
           base = "#1e1e2f";
         };
       };
       disable_underline = false;
-      flavour = "latte";
+      # flavour = "latte";
+      flavour = "frappe";
       integrations = {
         cmp = true;
         gitsigns = true;
