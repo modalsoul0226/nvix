@@ -19,6 +19,7 @@
       formatters_by_ft = {
         svelte = [ "prettierd" ];
         vue = [ "prettierd" ];
+        react = [ "prettierd" ];
         typescript = [ "prettierd" ];
         javascript = [ "prettierd" ];
         json = [ "prettierd" ];
