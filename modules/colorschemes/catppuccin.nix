@@ -9,8 +9,8 @@
         };
       };
       disable_underline = false;
-      # flavour = "latte";
-      flavour = "frappe";
+      flavour = "latte";
+      # flavour = "frappe";
       integrations = {
         cmp = true;
         gitsigns = true;
